@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+.header {
+  height: 100%;
+  width: 100%;
+  padding: 0 8%;
+  background: #080008;
+  position: relative;
+
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 400px;
+}
+.nav-links {
+  padding: 28px 0;
+}
+.nav-links li {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: x-large;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 0;
+  position: relative;
+}
+.nav-links li a::after {
+  content: "";
+  background: #ff3d00;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
+}
+.nav-links li a:hover::after {
+  width: 100%;
+}
+#text {
+  background-color: rgba(195, 212, 212, 0.979);
+  border: 10px double rgb(117, 119, 18);
+}
+.body2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-columns: minmax(50px, auto);
+  grid-auto-rows: minmax(50px, auto);
+  column-gap: 10px;
+}
+#text123 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+#first {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+#second {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#third {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.footer-container {
+  color: #fff;
+  text-decoration: none;
+  font-size: medium;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.radio1 {
+  padding: 50px 0;
+  gap: 10px;
+}
+.radio1 li {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: x-large;
+}
+.radio1 li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 0;
+  position: relative;
+}
+.radio1 li a::after {
+  content: "";
+  background: #5e942c;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
+}
+.radio1 li a:hover::after {
+  width: 100%;
+}
+.footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#love1 {
+  text-align: left;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.fa-github {
+  background: #e8ecee;
+  color: rgb(32, 2, 2);
+}
+.fa-instagram {
+  background: #8a3ab9;
+  color: white;
+}
+.fa-linkedin {
+  background: #cdd0d6;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
